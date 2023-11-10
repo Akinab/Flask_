@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert to Uppercase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #3453db;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #27ae60;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Convert String to Uppercase</h1>
+
+    <form action="/works" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString">
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if result %}
+    <p>Converted string: {{ result }}</p>
+    {% endif %}
+
+</body>
+</html>
